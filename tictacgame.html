@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="Tictacgame.css "> 
+	<script src="Tictacgame.js"></script> 
+    <title>Tic-Tac-Toe Game</title>        
+    </head> 
+<body>
+    <div class="main">
+        <h1>Tic - Tac -Toe</h1>
+        <p id="instr">
+            Game starts just tap on box
+            <br>first player start as <b>Player X</b>
+            <br>second player start as <b>Player 0</b>
+        </p><br>
+        <div class="box">
+            <div class="row">
+                <input type="text" id="b1" class="cell" onclick="rowFun1(); inputFun();" readonly>
+                <input type="text" id="b2" class="cell" onclick="rowFun2(); inputFun();" readonly>
+                <input type="text" id="b3" class="cell" onclick="rowFun3(); inputFun();" readonly>
+            </div>
+                <div class="row">
+                    <input type="text" id="b4" class="cell" onclick="rowFun4(); inputFun();" readonly>
+                    <input type="text" id="b5" class="cell" onclick="rowFun5(); inputFun();" readonly>
+                    <input type="text" id="b6" class="cell" onclick="rowFun6(); inputFun();" readonly>
+                </div>
+                    <div class="row">
+                        <input type="text" id="b7" class="cell" onclick="rowFun7(); inputFun();" readonly>
+                        <input type="text" id="b8" class="cell" onclick="rowFun8(); inputFun();" readonly>
+                        <input type="text" id="b9" class="cell" onclick="rowFun9(); inputFun();" readonly>
+                    </div></div>
+        <br><br>
+        <button id="button" onclick="clickReset()">Reset</button>
+        <br>
+        <p id="print"></p>
+    </div>
+</body>
+</html>
